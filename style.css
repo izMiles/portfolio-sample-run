@@ -1,0 +1,756 @@
+
+* {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+}
+
+body {
+    font-family:'Arvo', serif;
+    background: url("../images/banner.jpg") no-repeat center top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 560px;
+    height: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p{
+    color: #2a404e;
+}
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* ------------------------------------------DESKTOP NAV------------------------------------------ */
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: #ef664d;
+}
+
+a:hover{
+    color: #ef664d;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #ef664d;
+}
+
+.logo, .nav-logo{
+    font-size: 3rem;
+    color: white;
+}
+
+.logo:hover{
+    cursor:default;
+}
+
+.nav-logo:hover{
+    cursor: pointer;
+    color: #ef664d;
+    text-decoration: underline;
+    text-decoration-color: #ef664d;
+    text-underline-offset: 1rem;
+}
+
+/* ------------------------------------------HAMBURGER MENU------------------------------------------ */
+
+#hamburger-nav{
+    display:none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover{
+    color:#ef664d;
+    cursor: pointer;
+}
+
+.menu-links li{
+    list-style: none;
+}
+
+.menu-links.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+    opacity: 1;
+}
+
+/* ------------------------------------------INTRO HEADER------------------------------------------ */
+
+#intro-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.quote-text{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Arvo', serif;
+
+}
+
+.jfk{
+    float: right;
+    color:white;
+}
+
+.highlight{
+    color:#ef664d;
+}
+
+
+
+/* ------------------------------------------SECTIONS------------------------------------------ */
+
+
+
+
+
+
+/* ------------------------------------------PROFILE SECTION------------------------------------------ */
+
+#profile{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 7rem;
+    height: 80vh;
+    margin-top: 5rem;
+}
+
+.previous-arrow-profile{
+    position: absolute;
+    top: 75px;
+    left: 20px;
+}
+
+.previous-arrow-profile:hover{
+    cursor: pointer;
+}
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    
+}
+
+.profilename{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.section__text p{
+    font-weight: 600;
+}
+
+.section__text__p1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color:#ef664d;
+    padding-top: 4rem;
+    font-weight: 500;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover, .btn-color-2:hover{
+    cursor: pointer;
+}
+.btn-color-1, .btn-color-2:hover{
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2{
+    background: none;
+}
+
+.btn-color-2:hover{
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+.next-arrow-profile{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.next-arrow-profile:hover{
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------ABOUT SECTION------------------------------------------ */
+
+#about{
+    position: relative;
+    background-image: url(../images/aboutbg.png) ;
+    background-size: cover;
+    height: 84vh;
+    margin: 0;
+    min-height: 70px;
+}
+
+.previous-arrow-about{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.previous-arrow-about:hover{
+    cursor: pointer;
+}
+
+.previouse-arrow-about:hover{
+    cursor: pointer;
+}
+
+.section-container{
+    display: flex;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.about-containers, 
+.about-details-container{
+    display: flex;
+   
+    
+}
+
+.about-pic{
+    border-radius: 2rem;
+    margin-left: 5rem;
+}
+
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    margin-right: 10rem;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.text-container{
+    color: white;
+    font-family: 'Open  ', serif;
+    font-size: 1.2rem;
+}
+
+.about-title{
+    color: white;
+    font-weight: 600px;
+    font-size: 2rem;
+}
+
+.next-arrow-about{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.next-arrow-about:hover{
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------SKILLS SECTION------------------------------------------ */
+
+#skills{
+    position: relative;
+}
+ 
+.previous-arrow-skills{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.previous-arrow-skills:hover{
+    cursor: pointer;
+}
+
+.skills-title{
+    font-size: 3rem;
+    text-align: center;
+    color: #2a404e;
+    padding-top: 4rem;
+    font-weight: 500;
+}
+
+#skill-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.graph {
+    width: auto;
+    height: 25px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    
+}
+
+.skillset1, .skillset2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    height: 350px;
+}
+
+.skillname{
+    margin-bottom: .5rem;
+}
+
+.skill{
+    display: flex;
+    gap: 16.7rem;
+}
+
+.skill2{
+    display: flex;
+    gap: 18rem;
+}
+
+.skill3{
+    display: flex;
+    gap: 13.7rem;
+}
+
+.skill4{
+    display: flex;
+    gap: 13.7rem;
+}
+
+.skill5{
+    display: flex;
+    gap: 17.3rem;
+}
+
+.skill6{
+    display: flex;
+    gap: 5.5rem;
+}
+
+.skills-title2{
+    
+    text-align: center;
+    color:rgb(53, 53, 53);
+}
+
+.additional-skills-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    color:#2a404e;
+    padding-bottom: 5rem;
+
+}
+.additional-skills-logo1{
+    width: 100px;
+    height: 100px;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    margin-left: 50%;
+}
+
+.additional-skills-technologist{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+
+.additional-skills-programmer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.additional-skills-technical{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+}
+
+.next-arrow-skills{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.next-arrow-skills:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------------WORKS SECTION------------------------------------------ */
+
+
+
+#works{
+    position: relative;
+    background-image: url(../images/aboutbg.png) ;
+    background-size: cover;
+    height: 88vh;
+    margin: 0;
+    min-height: 70px; 
+}
+
+.previous-arrow-works{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+}
+
+.previous-arrow-works:hover{
+    cursor: pointer;
+}
+
+.works-title{
+    font-size: 3rem;
+    text-align: center;
+    color:#f2ac61;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+
+.works-header{
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    color: white;
+    font-style: 'Arvo', serif;
+    font-weight: 100;
+    padding-bottom: 2rem;
+}
+
+.project-title{
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color:#f2ac61;
+    font-style: 'Arvo', serif;
+    font-weight: 500;
+}
+
+.works-pictures-border {
+    border: 20px double #f2ac61;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: auto; 
+    max-width: 80%; 
+}
+
+.works-pictures,
+.works-picture2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+ 
+}
+
+.works-picture2{
+    padding-bottom: 2rem;
+}
+
+.myworks {
+    width: 300px;
+    height: 200px;
+}
+
+.next-arrow-works{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.next-arrow-works:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------------CONTACT SECTION------------------------------------------ */
+
+#contact{
+    position: relative;
+}
+
+.contact-title {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 3rem;
+    padding-top: 2rem;
+    font-weight: 500;
+    color: #2a404e;
+}
+
+.contact-header {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2rem;
+    color: #2a404e;
+}
+
+.contact-logo {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    padding-top: 3rem; 
+    padding-bottom: 4rem;
+}
+
+.contact-logo1 {
+    width: 40px;
+    height: 40px;
+}
+.contact-logo2 {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-logo4 {
+    width: 40px;
+    height: 40px;
+}
+.contact-logo5 {
+    width: 40px;
+    height: 40px;
+}
+.contact-logo6 {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+hr{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.previous-arrow-contact{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 29px;
+    width: 29px;
+}
+
+.previous-arrow-contact:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

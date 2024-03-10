@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css"/>
+</head>
+<body>
+
+    <!-- --------------------------------------------------NAVIGATION BAR-------------------------------------------------- -->
+
+    <nav id="desktop-nav" >
+        
+            <a href="#profile" onclick="toggleMenu()" class="nav-logo">MILES</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        
+    </nav>
+    <nav id="hamburger-nav">
+        <h1 class="logo">Miles Rivera</h1>
+        <nav class="hamburger-menu">
+            <nav class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+            <nav class="menu-links">
+                <li><a href="#about"  onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#works"  onclick="toggleMenu()">Works</a></li>
+                <li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+            </nav>
+        </nav>
+    </nav>
+
+    <!-- --------------------------------------------------INTRO HEADER-------------------------------------------------- -->
+
+    <header id="intro-header">
+        
+        <header class="quote-text">"<span class="highlight"> Man</span> is still the most <br>extraordinary <span class="highlight">Computer</span> of <br> all "</p><br>
+            <p class="jfk">-  JFK</p>  
+        </header>
+    </header>
+
+    <section id="profile">
+        <figure class="previous-arrow-profile">
+            <img src="./assets/images/blackarrowup.png" alt="arrow" class="previous-arrow-contact" onclick="location.href='#desktop-nav'">
+        </figure> 
+        <figure class="section__pic-container">
+            <img src="./assets/images/milespic.png" alt="miles profile pic">
+        </figure>
+        <section>
+            <main class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="profilename">Godwin Miles Rivera</h1>
+                <p class="section__text__p2">Computer Technologist</p>
+                <figure class="btn-container">
+                    <button class="btn btn-color-1 " onclick="window.open('./assets/docs/milesresume.pdf')">Download CV</button>
+                </figure>
+                <figure id="socials-container">
+                    <img src="./assets/images/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/godwin-miles-rivera-617b2b2b7/'">
+                    <img src="./assets/images/github-logo.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://github.com/izMiles'">
+                </figure>
+            </main>
+            <figure class="next-arrow-profile">
+            <img src="./assets/images/blackarrow.png" alt="arrow" class="next-arrow-profile" onclick="location.href='#about'">
+            </figure> 
+        </section>
+        
+    </section> 
+
+    <!-- --------------------------------------------------ABOUT SECTION-------------------------------------------------- -->
+
+    <section id="about">
+        <figure class="previous-arrow-about">
+            <img src="./assets/images/arrow1up.png" alt="arrow" class="previous-arrow-about" onclick="location.href='#profile'">
+        </figure> 
+        <h1 class="title">About Me</h1>
+        <section class="section-container">
+            <figure class="section__pic-container">
+                <img src="./assets/images/aboutpic.jpg" alt="Profile picture" class="about-pic"/>
+            </figure>
+            <section class="about-details-container">
+                <header class="about-title">Hey there! I'm <b>Godwin Miles Rivera,</b></header><br><br>
+                <main class="text-container">
+                    A passionate computer technologist, programmer, and technical support specialist. With a strong background in technology and a knack for problem-solving, I thrive in dynamic environments where I can apply my skills to create innovative solutions and provide exceptional technical support. From an early age, I've been captivated by the ever-evolving landscape of technology. Whether it's exploring the intricacies of computer systems, diving into the depths of programming languages, or unraveling the complexities of technical challenges, I'm fueled by an unwavering passion for all things tech.
+                </main><br>
+                <section class="about-containers">
+                    <section class="details-container">
+                        <img src="./assets/images/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>OJT<br>Software Development</p>
+                    </section>
+                    <section class="details-container">
+                        <img src="./assets/images/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>3 years<br>Computer Technologist</p>
+                    </section>
+                </section>
+                <figure class="next-arrow-about">
+                    <img src="./assets/images/arrow1.png" alt="arrow" class="next-arrow-about" onclick="location.href='#skills'">
+                </figure> 
+            </section>
+        </section>
+        
+    </section>
+
+    <!-- --------------------------------------------------SKILLS SECTION-------------------------------------------------- -->
+
+        <section id="skills">
+            <nav class="previous-arrow-skills">
+                <img src="./assets/images/blackarrowup.png" alt="arrow" class="previous-arrow-skills" onclick="location.href='#about'">
+            </nav> 
+            <h1 class="skills-title">My Skills</h1>
+            <main id="skill-group">
+
+                <section class="skillset1">
+                    <section class="html">
+                        <span class="skill">
+                            <p class="skillname"><b>HTML</b></p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                    <section class="css">
+                        <span class="skill2">
+                            <p class="skillname"><b>CSS</p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                    <section class="javascript">
+                        <span class="skill3">
+                            <p class="skillname"><b>JAVASCRIPT</p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                </section>
+
+                <section class="skillset2">
+                    <section class="technical">
+                        <span class="skill4">
+                            <p class="skillname"><b>HARDWARE</b></p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                    <section class="css">
+                        <span class="skill5">
+                            <p class="skillname"><b>JAVA</p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                    <section class="javascript">
+                        <span class="skill6">
+                            <p class="skillname"><b>WORD/EXCEL/SPREADSHEET</p>
+                            <p class="skillpercent"><b>60%</b></p>
+                        </span>
+                        <img src="./assets/images/bar4.png" alt="bar" class="graph">
+                    </section>
+                </section>
+                
+            </main>
+            
+            <h2 class="skills-title2">WHAT I DO:</h2>
+        
+            <article class="additional-skills-text">
+                <figure>
+                    <img src="./assets/images/desktop.png" alt="desktoppc" class="additional-skills-logo1">
+                <span class="additional-skills-technologist">
+                    Computer Technologist: I love delving into the intricacies of computer systems, from hardware to software, to ensure smooth operations and optimal performance.
+                </span>
+                </figure>
+                <figure>
+                    <img src="./assets/images/laptop.png" alt="desktoppc" class="additional-skills-logo1">
+                <span class="additional-skills-programmer">
+                    Programmer: Coding is my playground! I enjoy crafting elegant and efficient solutions using languages like Python, JavaScript, and Java.
+                </span>
+                </figure>
+                <figure>
+                    <img src="./assets/images/wrench.png" alt="desktoppc" class="additional-skills-logo1">
+                <span class="additional-skills-technical">
+                    Technical Support Specialist: Need help navigating through tech troubles? I've got you covered! I specialize in providing reliable technical support and troubleshooting to keep things running smoothly.
+                </span>
+                </figure>
+            </article>
+            <footer class="next-arrow-skills">
+                <img src="./assets/images/blackarrow.png" alt="arrow" class="next-arrow-skills" onclick="location.href='#works'">
+            </footer> 
+        </section>
+
+        <!-- --------------------------------------------------WORKS SECTION-------------------------------------------------- -->
+
+        <section id="works">
+            <footer class="previous-arrow-works">
+                <img src="./assets/images/yellowarrowup.png" alt="arrow" class="previous-arrow-works" onclick="location.href='#skills'">
+            </footer>
+            <h1 class="works-title">Works Gallery</h1>
+            <h4 class="works-header">Welcome to my Works Gallery, where creativity meets innovation! Dive into a showcase of my finest creations, each one meticulously crafted to inspire and captivate. From sleek designs to groundbreaking projects, this gallery is a testament to my passion for pushing boundaries and delivering excellence.</h4>
+            <section class="works-pictures-border">
+                <h4 class="project-title">My Notepad</h4>
+                <figure class="works-pictures">
+                    <img src="./assets/images/mynotepad.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad2.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad3.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad4.png" alt="works" class="myworks">
+                </figure>
+                <figure class="works-picture2">
+                    <img src="./assets/images/mynotepad5.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad6.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad7.png" alt="works" class="myworks">
+                    <img src="./assets/images/mynotepad8.png" alt="works" class="myworks">
+                </figure>
+            </section>
+            <footer class="next-arrow-works">
+                <img src="./assets/images/yellowarrow.png" alt="arrow" class="next-arrow-works" onclick="location.href='#contact'">
+            </footer> 
+        </section>
+
+        <!-- --------------------------------------------------CONTACT FOOTER-------------------------------------------------- -->
+
+        <footer id="contact">
+            <footer class="previous-arrow-contact">
+                <img src="./assets/images/blackarrowup.png" alt="arrow" class="previous-arrow-contact" onclick="location.href='#works'">
+            </footer> 
+            <h1 class="contact-title">Contact Me</h1>
+            <h3 class="contact-header">Whether you're interested in collaborating on a project, discussing a freelance opportunity, or simply want to share your thoughts, I'm all ears. Feel free to reach out using the contact form below, or connect with me through the provided contact details.
+        
+            I'm looking forward to hearing from you and starting a meaningful conversation. Let's turn your ideas into reality and make something great together!</h3>
+            <figure class="contact-logo">
+                <img src="./assets/images/facebook.png" alt="contactlogo" class="contact-logo1" onclick="location.href='https://www.facebook.com/Mileesssssss'">
+                <img src="./assets/images/instagram.png" alt="contactlogo" class="contact-logo2" onclick="location.href='https://www.instagram.com/godwinmilesrivera/'">
+                <img src="./assets/images/email.png" alt="contactlogo" class="contact-logo4" onclick="location.href='https://mail.google.com/mail/?view=cm&fs=1&to=godwinriveraa@gmail.com'">
+                <img src="./assets/images/twitter.png" alt="contactlogo" class="contact-logo5" onclick="location.href='https://twitter.com/GodwinMilesRiv1'">
+                <img src="./assets/images/viber.png" alt="contactlogo" class="contact-logo6" onclick="location.href='https://www.viber.com/en/'">
+            </figure>
+            <hr>
+            <footer class="copyright"><p> <small>&copy; Copyright 2024,  Miles' Portfolio. All Rights Reserved</small> </p></footer> 
+        </footer>
+        
+        
+        
+          
+        
+        
+    
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
