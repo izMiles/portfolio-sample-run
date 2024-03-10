@@ -7,7 +7,7 @@
 
 body {
     font-family:'Arvo', serif;
-    background: url("../images/banner.jpg") no-repeat center top;
+    background: url("banner.jpg") no-repeat center top;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -317,7 +317,7 @@ a:hover{
 
 #about{
     position: relative;
-    background-image: url(../images/aboutbg.png) ;
+    background-image: url(aboutbg.png) ;
     background-size: cover;
     height: 84vh;
     margin: 0;
@@ -556,7 +556,7 @@ a:hover{
 
 #works{
     position: relative;
-    background-image: url(../images/aboutbg.png) ;
+    background-image: url(aboutbg.png) ;
     background-size: cover;
     height: 88vh;
     margin: 0;
